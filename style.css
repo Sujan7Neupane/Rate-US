@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main-section {
+    background-color: rgb(254, 194, 121);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-container {
+    background-color: #fff;
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-container a {
+    color: rgb(212, 0, 0);
+    text-decoration: none;
+}
+
+.rating-box {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+
+    margin: 1rem 0;
+}
+
+.rating-box .box {
+    width: 20%;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-box .box .title {
+    color: rgb(162, 162, 162);
+}
+
+.rating-box .box:hover img {
+    color: rgb(255, 136, 0);
+}
+
+.rating-box .box img {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    object-fit: cover;
+}
+
+.rating-box .box:hover img {
+    filter: brightness(0.6) sepia(1) hue-rotate(-30deg) saturate(10);
+}
+
+.rating-box .box:hover .title {
+    color: orange; /* Changes the text color to orange */
+}
+
+
+.rating-box .box {
+width: 20%;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.rating-box .box .title {
+color: rgb(162, 162, 162);
+transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.rating-box .box img {
+width: 100%;
+height: auto;
+max-width: 50px;
+object-fit: cover;
+transition: filter 0.3s ease; /* Smooth transition for filter effect */
+}
+
+.rating-box .box:hover img {
+filter: hue-rotate(30deg) saturate(3) brightness(1.2); /* Apply an orange-like tint */
+}
+
+.rating-box .box:hover .title {
+color: orange; 
+}
